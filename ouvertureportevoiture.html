@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ouverture de Porte de Voiture Rennes — ArtisanDirect — Intervention 7j/7</title>
+<meta name="description" content="Clés bloquées dans la voiture, porte verrouillée ? Ouverture de véhicule à Rennes et couronne, toutes marques, sans dégât. Devis gratuit, artisan direct. 06 27 81 61 88.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#2B2420;
+    --ink-soft:#4A3F37;
+    --brass:#C08A3E;
+    --brass-deep:#9C6D2E;
+    --pine:#3F6659;
+    --pine-deep:#2F4D42;
+    --paper:#F5F1E8;
+    --paper-card:#FFFDF8;
+    --line: rgba(43,36,32,0.12);
+    --radius: 14px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    line-height:1.12;
+    margin:0;
+    color:var(--ink);
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  /* --- key-teeth divider, the signature element --- */
+  .key-divider{
+    width:100%;
+    height:14px;
+    background-repeat:repeat-x;
+    background-size:28px 14px;
+    background-image: linear-gradient(90deg, var(--brass) 0 4px, transparent 4px 8px, var(--brass) 8px 10px, transparent 10px 14px, var(--brass) 14px 22px, transparent 22px 28px);
+    opacity:.55;
+  }
+
+  /* --- top bar --- */
+  .topbar{
+    background:var(--ink);
+    color:var(--paper-card);
+    font-size:.9rem;
+    padding:.6rem 1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:.6rem;
+    text-align:center;
+    flex-wrap:wrap;
+  }
+  .topbar .dot{color:var(--brass);}
+  .topbar a{
+    color:var(--paper-card);
+    font-weight:600;
+    border-bottom:1px solid var(--brass);
+  }
+
+  header.site{
+    padding:1.1rem 1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    max-width:1100px;
+    margin:0 auto;
+  }
+  .brand{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.25rem;
+    letter-spacing:.01em;
+  }
+  .brand span{color:var(--brass-deep);}
+  .call-pill{
+    background:var(--pine);
+    color:#fff;
+    padding:.6rem 1.1rem;
+    border-radius:999px;
+    font-weight:600;
+    font-size:.95rem;
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    white-space:nowrap;
+  }
+
+  /* --- hero --- */
+  .hero{
+    max-width:1100px;
+    margin:0 auto;
+    padding:2.5rem 1.25rem 3rem;
+    display:grid;
+    gap:1.5rem;
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    font-size:.85rem;
+    font-weight:600;
+    color:var(--pine-deep);
+    background:rgba(63,102,89,0.1);
+    padding:.4rem .8rem;
+    border-radius:999px;
+    width:fit-content;
+  }
+  .eyebrow::before{
+    content:"";
+    width:8px;height:8px;
+    border-radius:50%;
+    background:var(--pine);
+    display:inline-block;
+  }
+  h1.hero-title{
+    font-size:clamp(2.1rem, 5vw, 3.4rem);
+    max-width:16ch;
+  }
+  h1.hero-title em{
+    font-style:normal;
+    color:var(--brass-deep);
+    position:relative;
+  }
+  .hero-sub{
+    font-size:1.08rem;
+    color:var(--ink-soft);
+    max-width:52ch;
+  }
+  .hero-cta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    align-items:center;
+    margin-top:.3rem;
+  }
+  .btn-primary{
+    background:var(--pine);
+    color:#fff;
+    padding:1rem 1.6rem;
+    border-radius:10px;
+    font-weight:700;
+    font-size:1.05rem;
+    display:inline-flex;
+    align-items:center;
+    gap:.6rem;
+    box-shadow:0 6px 18px rgba(63,102,89,0.25);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(63,102,89,0.32);}
+  .hero-note{
+    font-size:.9rem;
+    color:var(--ink-soft);
+  }
+
+  .stat-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    margin-top:1rem;
+  }
+  .stat{
+    background:var(--paper-card);
+    padding:1.2rem 1rem;
+    text-align:center;
+  }
+  .stat .num{
+    font-family:'Fraunces',serif;
+    font-size:1.7rem;
+    font-weight:600;
+    color:var(--brass-deep);
+    display:block;
+  }
+  .stat .label{
+    font-size:.82rem;
+    color:var(--ink-soft);
+  }
+
+  section{
+    max-width:1100px;
+    margin:0 auto;
+    padding:3.2rem 1.25rem;
+  }
+  .section-head{
+    margin-bottom:1.8rem;
+    max-width:60ch;
+  }
+  .section-head .kicker{
+    font-size:.82rem;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--pine-deep);
+    display:block;
+    margin-bottom:.4rem;
+  }
+  .section-head h2{
+    font-size:clamp(1.6rem, 3vw, 2.2rem);
+  }
+
+  /* --- services / situations --- */
+  .service-card{
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:1.8rem;
+    display:grid;
+    gap:1rem;
+  }
+  .service-card p{color:var(--ink-soft);}
+  .service-card a.inline-link{
+    color:var(--brass-deep);
+    font-weight:600;
+    border-bottom:1px solid var(--brass);
+  }
+
+  /* --- why us / situations grid --- */
+  .why-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1.3rem;
+  }
+  .why-item{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:.9rem;
+    align-items:start;
+  }
+  .why-icon{
+    width:44px;height:44px;
+    border-radius:10px;
+    background:var(--pine);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.2rem;
+    flex-shrink:0;
+  }
+  .why-item h3{
+    font-size:1.05rem;
+    font-weight:600;
+    margin-bottom:.3rem;
+  }
+  .why-item p{
+    color:var(--ink-soft);
+    font-size:.95rem;
+    margin:0;
+  }
+
+  /* --- zone --- */
+  .zone-wrap{
+    background:var(--ink);
+    color:var(--paper-card);
+    border-radius:var(--radius);
+    padding:2.2rem;
+  }
+  .zone-wrap .section-head .kicker{color:var(--brass);}
+  .zone-wrap h2{color:#fff;}
+  .zone-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.6rem;
+    margin-top:1.3rem;
+  }
+  .zone-list span{
+    background:rgba(245,241,232,0.08);
+    border:1px solid rgba(245,241,232,0.18);
+    padding:.5rem .9rem;
+    border-radius:999px;
+    font-size:.88rem;
+  }
+
+  /* --- final cta --- */
+  .final-cta{
+    text-align:center;
+    background:var(--pine);
+    color:#fff;
+    border-radius:var(--radius);
+    padding:3rem 1.5rem;
+    margin:3rem auto;
+    max-width:1100px;
+  }
+  .final-cta h2{color:#fff;font-size:clamp(1.6rem,3vw,2.3rem);margin-bottom:.6rem;}
+  .final-cta p{color:rgba(255,255,255,.85);margin-bottom:1.6rem;}
+  .final-cta .btn-primary{
+    background:var(--brass);
+    box-shadow:0 6px 18px rgba(0,0,0,0.2);
+  }
+  .final-cta .btn-primary:hover{background:var(--brass-deep);}
+
+  footer{
+    padding:2rem 1.25rem;
+    text-align:center;
+    font-size:.85rem;
+    color:var(--ink-soft);
+  }
+  footer .fbrand{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    color:var(--ink);
+    display:block;
+    margin-bottom:.3rem;
+  }
+  footer a.back-home{
+    color:var(--pine-deep);
+    font-weight:600;
+    display:inline-block;
+    margin-top:.6rem;
+  }
+
+  @media (max-width: 720px){
+    .why-grid, .before-after{grid-template-columns:1fr;}
+    .stat-row{grid-template-columns:1fr;}
+    header.site{flex-direction:column;gap:.8rem;align-items:flex-start;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .btn-primary{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <span class="dot">●</span> Voiture bloquée ? <a href="tel:0627816188">06 27 81 61 88</a> — Artisan direct, 7j/7
+  </div>
+
+  <header class="site">
+    <a class="brand" href="/">Artisan<span>Direct</span></a>
+    <a class="call-pill" href="tel:0627816188">📞 06 27 81 61 88</a>
+  </header>
+
+  <div class="key-divider"></div>
+
+  <main>
+    <section class="hero">
+      <span class="eyebrow">Disponible maintenant — Rennes & Couronne 35</span>
+      <h1 class="hero-title">Voiture <em>verrouillée</em> à Rennes ?</h1>
+      <p class="hero-sub">Clés oubliées ou bloquées à l'intérieur, porte qui ne s'ouvre plus, bip qui ne répond plus ? Vous parlez directement à l'artisan — pas à un centre d'appel. Ouverture sans dégât, toutes marques, devis gratuit avant intervention.</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="tel:0627816188">📞 06 27 81 61 88</a>
+        <span class="hero-note">Réponse immédiate — Tarif annoncé avant intervention</span>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><span class="num">7j/7</span><span class="label">Disponibilité</span></div>
+        <div class="stat"><span class="num">+20</span><span class="label">Communes couvertes</span></div>
+        <div class="stat"><span class="num">0€</span><span class="label">Devis gratuit</span></div>
+      </div>
+    </section>
+
+    <div class="key-divider"></div>
+
+    <section id="service">
+      <div class="section-head">
+        <span class="kicker">Notre intervention</span>
+        <h2>Ouverture de porte de voiture</h2>
+      </div>
+      <div class="service-card">
+        <h3>Voiture bloquée ou clés à l'intérieur</h3>
+        <p>Clés oubliées dans la voiture, porte verrouillée après un claquement, centralisation bloquée : ouverture professionnelle sans dégât sur la carrosserie ni la serrure, quelle que soit la marque du véhicule. Pas d'outil improvisé, pas de casse — une méthode d'artisan.</p>
+        <p>Vous avez aussi une porte de maison ou une serrure bloquée ? <a class="inline-link" href="/#services">Voir le service serrurerie →</a></p>
+      </div>
+    </section>
+
+    <section id="situations">
+      <div class="section-head">
+        <span class="kicker">Cas les plus fréquents</span>
+        <h2>Ce qu'on résout</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">🔑</div>
+          <div>
+            <h3>Clés à l'intérieur du véhicule</h3>
+            <p>Clés oubliées ou tombées à l'intérieur, portes verrouillées automatiquement : ouverture rapide sans abîmer le véhicule.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🚗</div>
+          <div>
+            <h3>Porte verrouillée après un claquement</h3>
+            <p>La porte s'est refermée et verrouillée seule ? Intervention immédiate, toutes marques et tous modèles.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">📡</div>
+          <div>
+            <h3>Bip ou télécommande qui ne répond plus</h3>
+            <p>Pile à plat, bip défaillant : ouverture manuelle sans endommager la serrure ni l'électronique du véhicule.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🔒</div>
+          <div>
+            <h3>Serrure ou barillet bloqué</h3>
+            <p>Serrure grippée, barillet qui tourne dans le vide : déblocage professionnel sur place.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="section-head">
+        <span class="kicker">Pourquoi nous</span>
+        <h2>La différence</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">📞</div>
+          <div>
+            <h3>Vous parlez à l'artisan</h3>
+            <p>Pas de standard, pas de transfert. Vous avez directement le technicien qui intervient — il connaît le dossier dès le premier appel.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">💬</div>
+          <div>
+            <h3>Tarif avant intervention</h3>
+            <p>Le prix est annoncé avant toute intervention. Devis gratuit, zéro mauvaise surprise sur la facture.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">📍</div>
+          <div>
+            <h3>Artisan local Rennes</h3>
+            <p>Basé à Rennes, je connais le terrain. Intervention rapide sur toute la couronne — pas besoin d'attendre une heure.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🛡️</div>
+          <div>
+            <h3>Sans dégât garanti</h3>
+            <p>Aucune dégradation de la serrure ou de la carrosserie. Méthode professionnelle, pas de bricolage improvisé.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="zone">
+      <div class="zone-wrap">
+        <div class="section-head">
+          <span class="kicker">Zone d'intervention</span>
+          <h2>Rennes & Couronne</h2>
+        </div>
+        <div class="zone-list">
+          <span>Rennes</span><span>Cesson-Sévigné</span><span>Saint-Grégoire</span><span>Bruz</span>
+          <span>Vezin-le-Coquet</span><span>Pacé</span><span>Saint-Jacques</span><span>Chantepie</span>
+          <span>Betton</span><span>Acigné</span><span>Thorigné-Fouillard</span><span>Noyal-Châtillon</span>
+          <span>Chartres-de-Bretagne</span><span>Vern-sur-Seiche</span><span>Mordelles</span>
+          <span>Montgermont</span><span>Melesse</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="final-cta">
+      <h2>Voiture bloquée maintenant ?</h2>
+      <p>Disponible 7j/7 — Devis gratuit — Rennes & Ille-et-Vilaine</p>
+      <a class="btn-primary" href="tel:0627816188">📞 06 27 81 61 88</a>
+    </div>
+  </main>
+
+  <footer>
+    <span class="fbrand">ArtisanDirect</span>
+    © 2026 — Serrurier Rennes (35) — 06 27 81 61 88
+    <br>
+    <a class="back-home" href="/">← Retour à l'accueil</a>
+  </footer>
+
+</body>
+</html>
