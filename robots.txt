@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://artisandirect.fr/sitemap.xml
