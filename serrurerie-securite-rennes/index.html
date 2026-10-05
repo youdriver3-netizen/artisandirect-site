@@ -22,6 +22,15 @@
     'phone_conversion_number': '06 27 81 61 88'
   });
 </script>
+<script>
+  // Conversion Google Ads : clic sur un bouton "Appeler"
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (a && typeof gtag === 'function') {
+      gtag('event', 'conversion', {'send_to': 'AW-18242315333/yzt-CL2GsZEdEMXIzvpD', 'transport_type': 'beacon'});
+    }
+  });
+</script>
 </head>
 <body>
 <header class="topbar">
