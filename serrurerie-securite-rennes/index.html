@@ -19,7 +19,22 @@
 </script>
 <script>
   gtag('config', 'AW-18242315333/_WFbCNmuofkcEMXIzvpD', {
-    'phone_conversion_number': '06 27 81 61 88'
+    'phone_conversion_number': '06 27 81 61 88',
+    // Remplace le numéro dans le texte ET dans les boutons tel: par le numéro de suivi Google
+    'phone_conversion_callback': function (formatted_number, mobile_number) {
+      var digits = String(mobile_number || formatted_number).replace(/[^0-9+]/g, '');
+      if (!digits) { return; }
+      document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+        a.setAttribute('href', 'tel:' + digits);
+      });
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+      var node;
+      while ((node = walker.nextNode())) {
+        if (node.nodeValue.indexOf('06 27 81 61 88') !== -1) {
+          node.nodeValue = node.nodeValue.split('06 27 81 61 88').join(formatted_number);
+        }
+      }
+    }
   });
 </script>
 <script>
