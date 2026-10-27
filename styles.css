@@ -170,3 +170,29 @@ footer .foot-links a:hover{color:var(--brass-light);}
 .gallery-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--radius);display:block;box-shadow:0 6px 18px rgba(35,38,43,.14);}
 .gallery-grid figcaption{margin-top:10px;font-family:'EB Garamond';font-style:italic;color:var(--slate);font-size:.9rem;}
 .gallery-note{font-family:'EB Garamond';font-style:italic;color:var(--brass-dark);font-size:.95rem;margin-top:24px;}
+
+/* ---------- menu ☰ ---------- */
+.top-actions{display:flex;align-items:center;gap:12px;}
+.menu{position:relative;}
+.menu summary{list-style:none;cursor:pointer;width:46px;height:46px;display:flex;align-items:center;justify-content:center;border:1.5px solid rgba(200,170,110,.55);border-radius:var(--radius);}
+.menu summary::-webkit-details-marker{display:none;}
+.burger{display:flex;flex-direction:column;gap:5px;width:22px;}
+.burger i{display:block;height:2px;background:var(--brass-light);border-radius:2px;transition:transform .2s ease,opacity .2s ease;}
+.menu[open] .burger i:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.menu[open] .burger i:nth-child(2){opacity:0;}
+.menu[open] .burger i:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.menu-panel{position:absolute;right:0;top:calc(100% + 12px);width:min(300px, calc(100vw - 32px));background:var(--charcoal-3);border:1px solid rgba(200,170,110,.3);border-radius:var(--radius);box-shadow:0 18px 40px rgba(0,0,0,.45);padding:8px;display:flex;flex-direction:column;z-index:70;}
+.menu-panel a{color:var(--cream);text-decoration:none;font-family:'Oswald';font-size:1.05rem;padding:14px 14px;border-bottom:1px solid rgba(200,170,110,.15);}
+.menu-panel a:hover,.menu-panel a[aria-current="page"]{color:var(--brass-light);}
+.menu-panel .menu-call{margin-top:8px;border:none;border-radius:var(--radius);text-align:center;font-weight:600;color:var(--charcoal-3);background:linear-gradient(135deg,var(--brass-light),var(--brass) 55%,var(--brass-dark));}
+.menu-panel .menu-call:hover{color:var(--charcoal-3);}
+.menu-info{font-family:'EB Garamond';font-style:italic;color:#9C9686;font-size:.95rem;margin:10px 6px 4px;text-align:center;max-width:none;}
+@media (max-width:520px){ .top-actions{gap:8px;} .menu summary{width:42px;height:42px;} }
+@media (max-width:360px){ .topbar .mark-word{font-size:1rem;} .topbar .mark svg{width:28px;height:28px;} .topbar .mark{gap:8px;} }
+
+/* ---------- prix & engagements ---------- */
+.hero-note.price-note{color:var(--cream);font-style:normal;font-family:'Oswald';font-size:1.1rem;}
+.hero-note.price-note strong{color:var(--brass-light);}
+.trust-strip{list-style:none;padding:0;margin:34px 0 0;display:flex;flex-wrap:wrap;gap:10px;max-width:none;}
+.trust-strip li{font-family:'Oswald';font-size:.95rem;color:#C9C3B4;border:1px solid rgba(200,170,110,.35);border-radius:999px;padding:8px 16px;max-width:none;}
+.trust-strip b{color:var(--brass-light);margin-right:4px;}
