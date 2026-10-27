@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mentions légales – ArtisanDirect</title>
+<meta name="description" content="Mentions légales du site artisandirect.fr : éditeur, hébergeur, données personnelles et cookies.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://artisandirect.fr/mentions-legales/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Cinzel:wght@600&family=EB+Garamond:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18242315333"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18242315333');
+</script>
+<script>
+  gtag('config', 'AW-18242315333/_WFbCNmuofkcEMXIzvpD', {
+    'phone_conversion_number': '06 27 81 61 88',
+    // Remplace le numéro dans le texte ET dans les boutons tel: par le numéro de suivi Google
+    'phone_conversion_callback': function (formatted_number, mobile_number) {
+      var digits = String(mobile_number || formatted_number).replace(/[^0-9+]/g, '');
+      if (!digits) { return; }
+      document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+        a.setAttribute('href', 'tel:' + digits);
+      });
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+      var node;
+      while ((node = walker.nextNode())) {
+        if (node.nodeValue.indexOf('06 27 81 61 88') !== -1) {
+          node.nodeValue = node.nodeValue.split('06 27 81 61 88').join(formatted_number);
+        }
+      }
+    }
+  });
+</script>
+<script>
+  // Conversion Google Ads : clic sur un bouton "Appeler"
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (a && typeof gtag === 'function') {
+      gtag('event', 'conversion', {'send_to': 'AW-18242315333/yzt-CL2GsZEdEMXIzvpD', 'transport_type': 'beacon'});
+    }
+  });
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="mark" href="/">
+      <svg width="40" height="40" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="98" fill="#F5F1E8" fill-opacity="0.06"/>
+        <path fill="url(#gTop)" fill-rule="evenodd" d="M100,20 L150,58 L150,106 L108,106 L108,138 L133,138 L133,148 L108,148 L108,160 L133,160 L133,170 L108,170 L108,182 L92,182 L92,106 L50,106 L50,58 Z M115,70 A15,15 0 1,0 85,70 A15,15 0 1,0 115,70 Z"/>
+        <defs><linearGradient id="gTop" x1="15%" y1="10%" x2="85%" y2="95%"><stop offset="0%" stop-color="#F0CD86"/><stop offset="45%" stop-color="#C08A3E"/><stop offset="100%" stop-color="#7C5A24"/></linearGradient></defs>
+      </svg>
+      <span class="mark-word">Artisan<span class="accent">Direct</span></span>
+    </a>
+    <div class="top-actions">
+      <a class="btn-call" href="tel:+33627816188">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6,10.8c1.4,2.7,3.6,4.9,6.3,6.3l2.1-2.1c0.3-0.3,0.7-0.4,1.1-0.3c1.2,0.4,2.5,0.6,3.9,0.6c0.6,0,1,0.4,1,1V20c0,0.6-0.4,1-1,1C11.4,21,3,12.6,3,3c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.4,0.2,2.7,0.6,3.9c0.1,0.4,0,0.8-0.3,1.1L6.6,10.8z"/></svg>
+        <span class="full-number">06 27 81 61 88</span><span class="short-label">Appeler</span>
+      </a>
+      <details class="menu">
+        <summary aria-label="Ouvrir le menu des services"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></summary>
+        <nav class="menu-panel" aria-label="Services">
+        <a href="/">Accueil</a>
+        <a href="/porte-claquee-rennes/">Porte claquée</a>
+        <a href="/ouverture-porte-rennes/">Porte fermée à clé</a>
+        <a href="/ouverture-voiture-rennes/">Ouverture de voiture</a>
+        <a href="/#zone">Zone & horaires</a>
+          <a class="menu-call" href="tel:+33627816188">Appeler le 06 27 81 61 88</a>
+          <p class="menu-info">7j/7, 8h30–23h · Rennes + 20 km</p>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<section class="services legal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">INFORMATIONS LÉGALES</span>
+      <h1 class="legal-title">Mentions légales</h1>
+    </div>
+
+    <h2>1. Éditeur du site</h2>
+    <p>Le site artisandirect.fr est édité par Younesse AKID, entrepreneur individuel (EI) exerçant sous le nom commercial ArtisanDirect.</p>
+    <ul>
+      <li>Adresse : {{ADRESSE}}</li>
+      <li>Téléphone : 06 27 81 61 88</li>
+      <li>E-mail : {{EMAIL}}</li>
+      <li>SIREN : {{SIREN}}</li>
+      <li>Immatriculation : Registre national des entreprises (RNE)</li>
+      <li>TVA : TVA non applicable, article 293 B du Code général des impôts</li>
+    </ul>
+    <p>Directeur de la publication : Younesse AKID.</p>
+
+    <h2>2. Hébergeur</h2>
+    <p>Netlify, Inc., 512 2nd Street, FL2, San Francisco, CA 94107, États-Unis. Site : netlify.com.</p>
+
+    <h2>3. Prix et intervention</h2>
+    <p>Les prix affichés sur le site sont des prix de départ, toutes taxes comprises, déplacement compris. Le prix exact de l'intervention est annoncé par téléphone avant tout déplacement, puis confirmé sur place avant le début des travaux.</p>
+
+    <h2>4. Données personnelles</h2>
+    <p>Le site ne comporte aucun formulaire et ne collecte pas directement de données personnelles. Lorsque vous appelez, votre numéro de téléphone est utilisé uniquement pour traiter votre demande d'intervention et n'est jamais revendu.</p>
+    <p>Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour l'exercer, contactez l'éditeur aux coordonnées ci-dessus. Vous pouvez aussi saisir la CNIL (cnil.fr).</p>
+
+    <h2>5. Cookies et mesure des appels</h2>
+    <p>Le site utilise le service Google Ads (Google Ireland Limited) pour mesurer l'efficacité de ses annonces, notamment les appels passés depuis le site. Ce service peut déposer des cookies et afficher un numéro de suivi qui renvoie vers le 06 27 81 61 88.</p>
+
+    <h2>6. Propriété intellectuelle</h2>
+    <p>Les textes, photos d'interventions et éléments graphiques du site sont la propriété de l'éditeur. Toute reproduction sans autorisation écrite est interdite.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>ArtisanDirect — Rennes &amp; couronne</span>
+    <nav class="foot-links">
+      <a href="/">Accueil</a>
+      <a href="/porte-claquee-rennes/">Porte claquée</a>
+      <a href="/ouverture-porte-rennes/">Ouverture de porte</a>
+      <a href="/ouverture-voiture-rennes/">Ouverture voiture</a>
+    </nav>
+    <span>&copy; 2026</span>
+  </div>
+</footer>
+<a class="sticky-call" href="tel:+33627816188">📞 Appeler ArtisanDirect — 06 27 81 61 88</a>
+</body>
+</html>
